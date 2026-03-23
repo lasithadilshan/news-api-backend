@@ -142,7 +142,7 @@ app.get('/api/ai-summary', async (req, res) => {
 
     // 3. Instanciate LangChain Gemini Model
     const llm = new ChatGoogleGenerativeAI({
-      model: "gemini-1.5-flash",
+      model: "gemini-2.0-flash",
       apiKey: process.env.GEMINI_API_KEY,
       maxOutputTokens: 250,
       temperature: 0.3, // Low temperature forces factual, direct compilation
